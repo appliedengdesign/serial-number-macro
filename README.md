@@ -9,7 +9,7 @@ Numeric control program (G-Code) to engrave a four digit serial number based on 
 ![Screenshot](http://i.imgur.com/oo9iCC8.jpg)
 
 ## General Usage
-You will want to call the subprogram from you main program using `G65 P5000 A B C I J K D X Y` and your main program should handle the incrementing of the serial number variables. 
+You will want to call the subprogram from you main program using `G65 P5000 A B C I J K D E X Y` and your main program should handle the incrementing of the serial number variables. 
 
 ## Passed Variables
 ```
@@ -20,6 +20,7 @@ You will want to call the subprogram from you main program using `G65 P5000 A B 
 #5 = J = LETTER SPACING
 #6 = K = SCALE FACTOR = 1.0
 #7 = D = CLEARANCE PLANE
+#8 = E = SERIAL NUMBER TO ENGRAVE
 #24 = X = START X
 #25 = Y = START Y
 ```
@@ -27,10 +28,7 @@ You will want to call the subprogram from you main program using `G65 P5000 A B 
 
 ## Global Macro Variables
 ```
-#500 = 1st Digit
-#501 = 2nd Digit
-#502 = 3rd Digit
-#503 = 4th Digit
+#555 = 4 Digit Serial Number
 ```
 
 
